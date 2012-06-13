@@ -1,0 +1,18 @@
+# video / audio data
+_Anim/
+_Archive/
+_Audio/*
+_Videos/*
+
+# xcode noise
+build/*
+*xcuserdata/*
+*.pbxuser
+*.mode1v3
+iDiary_Review/iDiary2.xcodeproj/project.xcworkspace/xcuserdata/
+iDiary_Review/iDiary2.xcodeproj/xcuserdata/
+
+# osx noise
+.DS_Store
+profile
+
