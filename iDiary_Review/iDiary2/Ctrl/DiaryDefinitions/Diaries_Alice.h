@@ -29,7 +29,7 @@ static NSArray *metaDataAlice = [NSArray arrayWithObjects:
     [NSValue valueWithCGPoint:ccp(-1.5, 0)],            // page offset
     [NSValue valueWithCGSize:CGSizeMake(242, 200)],     // page corner animation size
     [NSValue valueWithCGPoint:ccp(-1, 1)],              // page corner offset
-    [NSValue valueWithCGPoint:ccp(945, 768-725)],       // disclamer coordinates
+    [NSValue valueWithCGPoint:ccp(0, 0)],       // disclamer coordinates
     nil];
 
 // This dictionary associates the diary-metadata-arrays with the persons    

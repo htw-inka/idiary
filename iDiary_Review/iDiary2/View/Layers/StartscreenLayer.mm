@@ -66,16 +66,21 @@ static const CGFloat kBackBtnX = 78;
     
     // setup disclaimer button
     [disclaimerBtn release];
-    disclaimerBtn = [[CCSprite alloc] initWithFile:@"disclaimer_btn.png"];
-    [disclaimerBtn setPosition:disclaimerPos];
-    [self addChild:disclaimerBtn];
-    
-    // setup back button
+    disclaimerBtn = nil;
     [backBtn release];
-    backBtn = [[CCSprite alloc] initWithFile:@"backButton.png"];
-    CGPoint backBtnPos = ccp(kBackBtnX, disclaimerPos.y);
-    [backBtn setPosition:backBtnPos];
-    [self addChild:backBtn];
+    backBtn = nil;
+    
+    if (!CGPointEqualToPoint(disclaimerPos, CGPointZero)) {
+        disclaimerBtn = [[CCSprite alloc] initWithFile:@"disclaimer_btn.png"];
+        [disclaimerBtn setPosition:disclaimerPos];
+        [self addChild:disclaimerBtn];
+    
+        // setup back button
+        backBtn = [[CCSprite alloc] initWithFile:@"backButton.png"];
+        CGPoint backBtnPos = ccp(kBackBtnX, disclaimerPos.y);
+        [backBtn setPosition:backBtnPos];
+        [self addChild:backBtn];
+    }
     
     // highlight after fading
     [self performSelector:@selector(highlightInteractiveElements) withObject:nil afterDelay:kVideoFadeDuration];
