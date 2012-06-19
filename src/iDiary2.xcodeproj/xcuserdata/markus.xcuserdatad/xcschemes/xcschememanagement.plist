@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Alice-Debug.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>Alice-Release.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>283034FF14ED1E780007D747</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28303B4C14ED2C710007D747</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>283040EC14ED32270007D747</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28A046E7157F99870020CD16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28D81C6E1532ED1D005A780E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28DD84401368123300D5E241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6979D983147502200063A525</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AAD6A48413F912C10005F04E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
