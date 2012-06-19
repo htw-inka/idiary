@@ -17,6 +17,7 @@ Features
  * integration of video, audio and animations
  * physical objects (using [Box2D](http://box2d.org/))
 * built-in classes for action & reflex games, quizzes, etc.
+* script to generate page graphics and code from a Photoshop PSD file
 * fast OpenGL based rendering (done by underlying framework 'Cocos2D')
 
 Prerequisites
