@@ -4,7 +4,7 @@ iDiary
 Software base for interactive diaries and ebooks for mobile devices
 -------------------------------------------------------------------
 
-'iDiary' is a [cocos2d](http://cocos2d-iphone.org)-based software framework/base for creating interactive multimedia diaries or ebooks. It runs on the Apple iOS platform and has so far been tested on iPad 1 and 2.
+__iDiary__ is a [cocos2d](http://cocos2d-iphone.org)-based software framework/base for creating interactive multimedia diaries or ebooks. It runs on the Apple iOS platform and has so far been tested on iPad 1 and 2.
 The software was created for interactive diaries used in workshops in the [Jewish Museum Berlin](http://www.jmberlin.de).
 
 Features
@@ -22,16 +22,17 @@ Features
 Prerequisites
 -------------
 
-This software requires 'XCode' to compile and run. The XCode project file can be found under `src/iDiary2.xcodeproj`. It already contains the sources of the [cocos2d-framework](http://cocos2d-iphone.org) of version 1.0.1 and is ready to compile.
+This software requires __XCode__ to compile and run. The XCode project file can be found under `src/iDiary2.xcodeproj`. It already contains the sources of the [cocos2d-framework](http://cocos2d-iphone.org) of version 1.0.1 and is ready to compile.
 
 
 Usage
 -----
 
-The software package contains an "example diary" consisting of 8 pages that show usage cases and how to implement them using the specific classes in 'idiary'. Details on the software architecture are described in the github wiki.
+The software package contains an "example diary" consisting of 8 pages that show usage cases and how to implement them using the specific classes in __idiary__. Details on the software architecture are described in the [github wiki][1].
 
 License
 -------
 
-This software is released under BSD 2-clause license which is contained in the file `LICENSE`.
+This software is released under BSD 3-clause license which is contained in the file `LICENSE`.
 
+[1]: https://github.com/htw-inka/idiary/wiki
