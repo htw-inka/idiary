@@ -81,6 +81,7 @@
     }
     
     // display the movie player
+    // added code to fix issue #1: not playing on iOS 6
    	CGSize screenSize = [CCDirector sharedDirector].winSize;
     CGFloat w = screenSize.width;
     CGFloat h = screenSize.height;
