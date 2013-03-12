@@ -70,7 +70,7 @@
     
     // set up the movie player
     player = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:video]];
-
+    [player prepareToPlay];
     [player setFullscreen:YES];
     [player setShouldAutoplay:YES];
 
@@ -82,10 +82,16 @@
     
     // display the movie player
    	CGSize screenSize = [CCDirector sharedDirector].winSize;
-    [player.view setFrame: CGRectMake(0, 0, screenSize.width, screenSize.height)];
+    CGFloat w = screenSize.width;
+    CGFloat h = screenSize.height;
+//    [player.view setBounds:CGRectMake(w/2, -h/2, w, h)];
+    [player.view setFrame:CGRectMake((h-w)/2, (w-h)/2, w, h)];
+    [player.view setTransform:CGAffineTransformMakeRotation(-M_PI_2)];
     [[[CCDirector sharedDirector] openGLView] addSubview:player.view];
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    [player play];
 
     // add a notification handler thats called when the movie ends
     [[NSNotificationCenter defaultCenter] addObserver:[CoreHolder sharedCoreHolder]

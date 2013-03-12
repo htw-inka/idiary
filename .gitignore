@@ -11,6 +11,8 @@ build/*
 *.mode1v3
 iDiary_Review/iDiary2.xcodeproj/project.xcworkspace/xcuserdata/
 iDiary_Review/iDiary2.xcodeproj/xcuserdata/
+src/iDiary2.xcodeproj/project.xcworkspace/xcuserdata/
+src/iDiary2.xcodeproj/xcuserdata/
 
 # osx noise
 .DS_Store
