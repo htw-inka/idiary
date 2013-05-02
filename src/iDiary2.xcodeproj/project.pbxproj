@@ -240,7 +240,6 @@
 		28A047F6157F99870020CD16 /* wiener_walzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 690403F31455871100505BD7 /* wiener_walzer.mp3 */; };
 		28A047F7157F99870020CD16 /* wingflap1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28E33B951455AC90000CBC74 /* wingflap1.mp3 */; };
 		28A047F8157F99870020CD16 /* slimy1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2830F1D21458317600BFC5FA /* slimy1.mp3 */; };
-		28A047F9157F99870020CD16 /* car_move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28398B6C145EDC43004D0F58 /* car_move.mp3 */; };
 		28A047FA157F99870020CD16 /* blingbling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28398B6F145EDC68004D0F58 /* blingbling.mp3 */; };
 		28A047FB157F99870020CD16 /* scratch3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2882DF6514629F7900678D03 /* scratch3.mp3 */; };
 		28A047FC157F99870020CD16 /* arrow_fly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EF073014B47F9C0005A1FD /* arrow_fly.mp3 */; };
@@ -258,7 +257,6 @@
 		28A048E9157F99870020CD16 /* disclaimer_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 286A107014FE570800D4B10C /* disclaimer_btn.png */; };
 		28A048EB157F99870020CD16 /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 286A108414FE59E600D4B10C /* closeButton.png */; };
 		28A048ED157F99870020CD16 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 281F5D8D156BC0C900ED6EB8 /* backButton.png */; };
-		28A048F5157F9A400020CD16 /* Info-Alice.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28A048F4157F9A400020CD16 /* Info-Alice.plist */; };
 		28A048FA157F9C070020CD16 /* Page_Alice_Intro.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28A048F9157F9C070020CD16 /* Page_Alice_Intro.mm */; };
 		28A04905157F9E880020CD16 /* alice_buch_hintergrund.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A048FD157F9E880020CD16 /* alice_buch_hintergrund.png */; };
 		28A04906157F9E880020CD16 /* alice_seiten_hintergrund.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A048FE157F9E880020CD16 /* alice_seiten_hintergrund.png */; };
@@ -2020,7 +2018,7 @@
 		28DD84381368123300D5E241 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "INKA Forschungsgruppe";
 			};
 			buildConfigurationList = 28DD843B1368123300D5E241 /* Build configuration list for PBXProject "iDiary2" */;
@@ -2085,7 +2083,6 @@
 				28A047F6157F99870020CD16 /* wiener_walzer.mp3 in Resources */,
 				28A047F7157F99870020CD16 /* wingflap1.mp3 in Resources */,
 				28A047F8157F99870020CD16 /* slimy1.mp3 in Resources */,
-				28A047F9157F99870020CD16 /* car_move.mp3 in Resources */,
 				28A047FA157F99870020CD16 /* blingbling.mp3 in Resources */,
 				28A047FB157F99870020CD16 /* scratch3.mp3 in Resources */,
 				28A047FC157F99870020CD16 /* arrow_fly.mp3 in Resources */,
@@ -2103,7 +2100,6 @@
 				28A048E9157F99870020CD16 /* disclaimer_btn.png in Resources */,
 				28A048EB157F99870020CD16 /* closeButton.png in Resources */,
 				28A048ED157F99870020CD16 /* backButton.png in Resources */,
-				28A048F5157F9A400020CD16 /* Info-Alice.plist in Resources */,
 				28A04905157F9E880020CD16 /* alice_buch_hintergrund.png in Resources */,
 				28A04906157F9E880020CD16 /* alice_seiten_hintergrund.png in Resources */,
 				28A04907157F9E880020CD16 /* startscreen_bg_Alice.png in Resources */,
@@ -2432,8 +2428,8 @@
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "Alice Diary";
-				PROVISIONING_PROFILE = "75153F03-1323-4B45-8FAD-7DEA94CCD570";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75153F03-1323-4B45-8FAD-7DEA94CCD570";
+				PROVISIONING_PROFILE = "86B63E28-E842-4BDB-B698-9CC55D539E97";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "86B63E28-E842-4BDB-B698-9CC55D539E97";
 				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = iDiary2/libs;
 				VALID_ARCHS = "i386 armv7";
@@ -2475,6 +2471,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2487,6 +2487,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PROVISIONING_PROFILE = "";
@@ -2501,6 +2502,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hochschule fuer Technik und Wirtschaft";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2508,6 +2513,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
