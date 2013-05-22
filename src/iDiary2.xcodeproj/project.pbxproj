@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2803AA22174CB8E6005963B1 /* Page_Alice_Example9.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2803AA21174CB8E6005963B1 /* Page_Alice_Example9.mm */; };
 		28A046E9157F99870020CD16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DD860B1368123700D5E241 /* main.m */; };
 		28A046EA157F99870020CD16 /* SoundHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 285AE5C913B25DAF00319F26 /* SoundHandler.mm */; };
 		28A046EB157F99870020CD16 /* SoundObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 285AE5CB13B25DAF00319F26 /* SoundObject.mm */; };
@@ -374,6 +375,8 @@
 		03F36FC7147BB51900FDCE4A /* zonk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = zonk.mp3; path = Resources/PageContents/zonk.mp3; sourceTree = "<group>"; };
 		280211E2143C9D9300356F8A /* MemoryGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryGameLayer.h; sourceTree = "<group>"; };
 		280211E3143C9D9300356F8A /* MemoryGameLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MemoryGameLayer.mm; sourceTree = "<group>"; };
+		2803AA20174CB8E6005963B1 /* Page_Alice_Example9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page_Alice_Example9.h; sourceTree = "<group>"; };
+		2803AA21174CB8E6005963B1 /* Page_Alice_Example9.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Page_Alice_Example9.mm; sourceTree = "<group>"; };
 		2804B67C14F54598009CDE7B /* ModalOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalOverlay.h; sourceTree = "<group>"; };
 		2804B67D14F54598009CDE7B /* ModalOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModalOverlay.mm; sourceTree = "<group>"; };
 		28064374140F8D6700548F55 /* scratch1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = scratch1.mp3; path = Resources/PageContents/scratch1.mp3; sourceTree = "<group>"; };
@@ -1104,6 +1107,8 @@
 				28FA19AD1588D6540085BDDF /* Page_Alice_Example7.mm */,
 				28FA19E01588DA4C0085BDDF /* Page_Alice_Example8.h */,
 				28FA19E11588DA4D0085BDDF /* Page_Alice_Example8.mm */,
+				2803AA20174CB8E6005963B1 /* Page_Alice_Example9.h */,
+				2803AA21174CB8E6005963B1 /* Page_Alice_Example9.mm */,
 			);
 			path = Alice;
 			sourceTree = "<group>";
@@ -2401,6 +2406,7 @@
 				28FA19AB1588D4F60085BDDF /* ArrowGameLayer.mm in Sources */,
 				28FA19AE1588D65A0085BDDF /* Page_Alice_Example7.mm in Sources */,
 				28FA19E21588DA4F0085BDDF /* Page_Alice_Example8.mm in Sources */,
+				2803AA22174CB8E6005963B1 /* Page_Alice_Example9.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

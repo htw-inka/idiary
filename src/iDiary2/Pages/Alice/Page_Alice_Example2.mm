@@ -244,15 +244,15 @@ static const float kLabelFlipAnimDur = 0.5f;
     [labelNode runAction:seq];
 }
 
--(void)swapLabelSpritesFinished:(CCNode *)labelNode {
+-(void)swapLabelSpritesFinished:(CCNode *)lbl {
     labelFlipAnimRunning = NO;   // reset status
     labelBackSideShowing = !labelBackSideShowing;
     
     // start again with dangle di ding dong
-    [self dangleLabel:labelNode];
+    [self dangleLabel:lbl];
 }
 
--(void)dangleLabel:(CCNode *)labelNode {    
+-(void)dangleLabel:(CCNode *)lbl {
     // set dangle angle
     if (dangleRepeatNum % 2 == 0) {
         dangleAngle = CCRANDOM_MINUS1_1() * 5.0f; // start new rotation
@@ -270,7 +270,7 @@ static const float kLabelFlipAnimDur = 0.5f;
     // create and run sequence
     CCSequence *dangleSeq = [CCSequence actions:dangleAction, dangleCallback, nil];
     
-    [labelNode runAction:dangleSeq];
+    [lbl runAction:dangleSeq];
     
     // increase repeat number
     dangleRepeatNum++;

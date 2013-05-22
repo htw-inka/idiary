@@ -45,6 +45,7 @@ static NSArray *diaryAlice = [NSArray arrayWithObjects:
     @"Example6",         // 5
     @"Example7",         // 6
     @"Example8",         // 7
+    @"Example9",         // 7
     nil];
    
 // This dictionary associates the diary-arrays with the persons

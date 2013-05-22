@@ -60,6 +60,9 @@
     [mediaObjects addObject:mDefWelcomeText];
     MediaDefinition *mDefWelcomeText2 = [MediaDefinition mediaDefinitionWithText:@"This was a short introduction to what is possible with the iDiary framework. Check out other layer classes, too! For example MemoryGameLayer, SoccerGameLayer, BoxingLayer, etc." font:@"Courier New" fontSize:18 color:ccBLACK inRect:CGRectMake(60, 660, 400, 500)];
     [mediaObjects addObject:mDefWelcomeText2];
+    MediaDefinition *mDefWelcomeText3 = [MediaDefinition mediaDefinitionWithText:@"WAIT! There is one more thing on the next page! A little example created in a workshop for the Culture and Computer Science Conference 2013" font:@"Courier New" fontSize:18 color:ccBLACK inRect:CGRectMake(550, 660, 400, 500)];
+    [mediaObjects addObject:mDefWelcomeText3];
+    
     
     // add a movable text
     MediaDefinition *movableText = [MediaDefinition mediaDefinitionWithText:@"I'm moveable text!" font:@"Courier New" fontSize:26 color:ccBLACK inRect:CGRectMake(700, 350, 250, 100)];
