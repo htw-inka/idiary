@@ -36,7 +36,7 @@
 //
 
 // These Arrays define the pages
-static NSArray *diaryAlice = [NSArray arrayWithObjects:
+static NSArray *diaryAlice = [[NSArray arrayWithObjects:
     @"Intro",            // 0
     @"Example2",         // 1
     @"Example3",         // 2
@@ -46,28 +46,23 @@ static NSArray *diaryAlice = [NSArray arrayWithObjects:
     @"Example7",         // 6
     @"Example8",         // 7
     @"Example9",         // 7
-    nil];
+    nil] retain];
    
 // This dictionary associates the diary-arrays with the persons
-static NSDictionary *diaryPages = [NSDictionary dictionaryWithObjectsAndKeys:
+static NSDictionary *diaryPages = [[NSDictionary dictionaryWithObjectsAndKeys:
     diaryAlice, @"Alice",
-    nil];
+    nil] retain];
 
 // These Arrays define meta data for diaries, such as the position of the diary in the startscreen, page offset, anim corner size
-static NSArray *metaDataAlice = [NSArray arrayWithObjects:
+static NSArray *metaDataAlice = [[NSArray arrayWithObjects:
     [NSValue valueWithCGPoint:ccp(395, 768-417)],       // position of the diary in the startscreen
     [NSValue valueWithCGPoint:ccp(-1.5, 0)],            // page offset
     [NSValue valueWithCGSize:CGSizeMake(242, 200)],     // page corner animation size
     [NSValue valueWithCGPoint:ccp(-1, 1)],              // page corner offset
     [NSValue valueWithCGPoint:ccp(0, 0)],       // disclamer coordinates
-    nil];
+    nil] retain];
 
 // This dictionary associates the diary-metadata-arrays with the persons    
-static NSDictionary *diaryMetaData = [NSDictionary dictionaryWithObjectsAndKeys:
+static NSDictionary *diaryMetaData = [[NSDictionary dictionaryWithObjectsAndKeys:
     metaDataAlice, @"Alice",
-    nil];    
-
-// global settings
-static NSMutableDictionary *globalSettings = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-    [NSNumber numberWithBool:NO], @"controlElemShown",
-    nil]; 
+    nil] retain];
