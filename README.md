@@ -9,6 +9,9 @@ The software was created for interactive diaries used in workshops in the [Jewis
 
 Features
 --------
+
+User __Maniacdev__ created a nice video showing some of the features on YouTube: [iDiary - iPad Development Library Using Cocos2D For Creating Interactive eBooks](http://www.youtube.com/watch?v=DK8BxlPVNCw)
+
 * E-Book look & feel
 * built-in 3D page swipe animation
 * diverse multimedia objects on the book's pages:
